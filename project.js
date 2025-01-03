@@ -50,8 +50,22 @@ function removeBook(index) {
   displayLibrary(); // Update the display
 }
 
+
 addBookToLibrary("Normal People", "Sally Rooney", 273, 2018, true);
 addBookToLibrary("If Cats Disappeared from the World", "Genki Kawamura", 202, 2012, true);
+addBookToLibrary("Weyward", "Emilia Hart", 392, 2023, false);
+addBookToLibrary("Never let me go", "Kazuo Ishiguro", 288, 2005, false);
+addBookToLibrary("The Particular Sadness of Lemon Cake", "Aimee Bender", 292, 2010, false);
+addBookToLibrary("Normal People", "Sally Rooney", 273, 2018, true);
+addBookToLibrary("If Cats Disappeared from the World", "Genki Kawamura", 202, 2012, true);
+addBookToLibrary("Weyward", "Emilia Hart", 392, 2023, false);
+addBookToLibrary("Never let me go", "Kazuo Ishiguro", 288, 2005, false);
+addBookToLibrary("The Particular Sadness of Lemon Cake", "Aimee Bender", 292, 2010, false);
+addBookToLibrary("Normal People", "Sally Rooney", 273, 2018, true);
+addBookToLibrary("If Cats Disappeared from the World", "Genki Kawamura", 202, 2012, true);
+addBookToLibrary("Weyward", "Emilia Hart", 392, 2023, false);
+addBookToLibrary("Never let me go", "Kazuo Ishiguro", 288, 2005, false);
+
 
  // Handle form submission
  document.getElementById("form").addEventListener("submit", function(event) {

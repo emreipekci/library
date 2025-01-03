@@ -1,17 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 10vh;
+    background-color: #34526a;
+    color: #FFFFFF;
+    padding: 2vh 0 2vh 2vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    max-width: 4%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
 .form-card {
+    grid-column: 1 / 2;
     border: 1px solid #ddd;
     padding: 15px;
-    border-radius: 8px;
-    width: 200px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-height: 85vh;
+    max-height: auto-fit;
     line-height: 25px;
+    background-color: #b3c7d6;
+}
+
+#form div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px; 
+}
+
+.radio-buttons input,
+.radio-buttons label{
+    align-self: center;
+}
+
+#cards-container {
+    grid-column: 2 / 3;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3px;
+    padding-top: 5px;
 }
 
 .book-card {
+    justify-self: center;
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
     width: 200px;
+    max-height: 250px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 25px;
+    background-color: #dee5ec;
 }
+
+h3 {
+    color: rgb(106, 108, 206);
+}
+
+footer {
+    background-color: #34526a;
+    height: 5vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+
 
